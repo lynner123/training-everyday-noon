@@ -1,8 +1,8 @@
 /**
  * Created by Administrator on 2017/8/8.
  */
+function main(num){
 
-    let num = 90;
     let str = '';
     
     for(let i = 2; i<= num; i++){
@@ -11,4 +11,8 @@
             str += i;
         }
     }
-    console.log('90 = ' + str);
+    
+    return str
+ }
+
+console.log('90 = ' + main(90));
