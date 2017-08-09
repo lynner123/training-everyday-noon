@@ -9,24 +9,23 @@
 
 function main(N) {
     let result = 0;
-    if(input === 1){
-        return result;
-    }else if(input ===2 || input === 3) {
+    if(N === 1){
+       return console.log('斐波纳契数列中第 '+ N +' 个数为：' + result);
+    }else if(N ===2) {
         result = 1;
-        return result;
+       return console.log('斐波纳契数列中第 '+ N +' 个数为：' + result);
     }
 
-    let n0 = 1;
+    let n0 = 0;
     let n1 = 1;
-    let i = 4;
-    while(i <= input) {
+    let i = 3;
+    while(i <= N) {
         result = n0 + n1;
         n0 = n1;
         n1 = result;
         i++;
     }
-    return result;
-    console.log('斐波纳契数列中第 '+ N +' 个数为：' result);
+    console.log('斐波纳契数列中第 '+ N +' 个数为：' + result);
 }
 
 main(1);
