@@ -1,6 +1,6 @@
-/**
- * Created by Administrator on 2017/8/8.
- */
+/*日期：2017/08/08
+ 题目：题目：将一个正整数分解质因数。例如：输入90,打印出90=2335。*/
+
 function main(num){
 
     let str = '';
@@ -12,7 +12,7 @@ function main(num){
         }
     }
     
-    return str
+    return str;
  }
 
 console.log('90 = ' + main(90));
