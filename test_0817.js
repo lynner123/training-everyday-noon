@@ -7,7 +7,7 @@
 function squareNum(arr){
     let newArr = [];
     arr.forEach(function(element) {
-        newArr.push(element * element);
+        newArr.push(Math.pow(element,2));
     });
     return newArr;
 }
