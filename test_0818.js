@@ -7,11 +7,19 @@
 let arr = [1, 3, 7, 1 ,4,];
 let item = 1;
 function findIndex(arr,item) {
-    let indexArr = arr.map((ele,index) =>{
-        if(ele === item){return index;}
-        return -1;
+    // let indexArr = arr.map((ele,index) =>{
+    //     if(ele === item){return index;}
+    //     // return -1;
+    // });
+    let indexArr = arr.filter((ele,index) =>{
+        if(ele !== item){
+            return arr.indexOf(ele);
+        }
+        return index;
     });
-    return indexArr.filter(num => num>-1).toString();
+
+    return indexArr;
+    // return indexArr.filter(num => num>-1).toString();
 }
 
 console.log('数组 arr = ' + arr + ' 中元素item = ' + item + ' 出现的位置： ' + findIndex(arr,item));
